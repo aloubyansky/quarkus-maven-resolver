@@ -4,7 +4,7 @@
   <parent>
     <groupId>io.quarkiverse</groupId>
     <artifactId>quarkiverse-parent</artifactId>
-    <version>18</version>
+    <version>20</version>
   </parent>
   <groupId>io.quarkiverse.mavenresolver</groupId>
   <artifactId>quarkus-maven-resolver-parent</artifactId>
@@ -12,13 +12,7 @@
   <name>Quarkus - Maven Resolver - Parent</name>
   <packaging>pom</packaging>
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-    <maven.compiler.parameters>true</maven.compiler.parameters>
-    <quarkus.version>3.15.2</quarkus.version>
-    <compiler-plugin.version>3.11.0</compiler-plugin.version>
+    <quarkus.version>3.27.1</quarkus.version>
   </properties>
   <scm>
     <connection>scm:git:git@github.com:quarkiverse/quarkus-maven-resolver.git</connection>
@@ -41,15 +35,4 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>${compiler-plugin.version}</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-  </build>
 </project>
